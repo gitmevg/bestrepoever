@@ -1,0 +1,10 @@
+Trigger hello on Account(before insert)
+{
+    for(Account ab:Trigger.new)
+    {
+        if (ab.staus=='Yes')
+        {
+            ab.summary='Trigger Created';
+        }
+    }
+}
